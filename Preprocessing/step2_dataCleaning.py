@@ -19,7 +19,7 @@ df = df.drop(columns=['CUST_ID', 'TENURE'])
 # print(missing_values)
 
 # Drop rows with missing values
-# df = df.dropna()
+df = df.dropna()
 
 # Check the shape of the dataset after dropping missing values
 # print("Shape of the dataset after dropping missing values:")
