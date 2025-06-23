@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Cargar datos escalados
-df_scaled = pd.read_csv(r"..\data\data_with_outliers\dataset_credit_cards_clean_scaled.csv")
+df_scaled = pd.read_csv(r"..\..\data\data_without_outliers\dataset_credit_cards_wo_scaled_reduced.csv")
 
 # Función para calcular SSB (Sum of Squares Between)
 def calculate_ssb(X, labels, centroids):

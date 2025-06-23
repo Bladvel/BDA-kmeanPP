@@ -21,16 +21,17 @@ df = df.drop(columns=['CUST_ID', 'TENURE'])
 # Drop rows with missing values
 df = df.dropna()
 
+# df.describe().to_csv(r'..\data\dataset_credit_cards_clean_description.csv')
 # Check the shape of the dataset after dropping missing values
 # print("Shape of the dataset after dropping missing values:")
 # print(df.shape)
 
-# Standardize Z-scores
-scaler = StandardScaler()
-df_scaled = scaler.fit_transform(df)
+# # Standardize Z-scores
+# scaler = StandardScaler()
+# df_scaled = scaler.fit_transform(df)
 
-# Convert the scaled data back to a DataFrame
-df_scaled = pd.DataFrame(df_scaled, columns=df.columns)
+# # Convert the scaled data back to a DataFrame
+# df_scaled = pd.DataFrame(df_scaled, columns=df.columns)
 
-# Save the cleaned and scaled data to a new CSV file
-df_scaled.to_csv(r'..\data\dataset_credit_cards_clean_scaled.csv', index=False)
+# # Save the cleaned and scaled data to a new CSV file
+# df_scaled.to_csv(r'..\data\dataset_credit_cards_clean_scaled.csv', index=False)
